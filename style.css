@@ -1,0 +1,197 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --black: #111;
+  --gray: #555;
+  --light: #f5f5f5;
+  --border: #e0e0e0;
+  --accent: #2563eb;
+  --accent-light: #eff6ff;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--black);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* HERO */
+.hero {
+  background: var(--black);
+  color: #fff;
+  padding: 100px 0 80px;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.hero .sub {
+  font-size: 1.05rem;
+  color: #aaa;
+  margin-bottom: 36px;
+  max-width: 520px;
+}
+
+/* SECTIONS */
+.section { padding: 72px 0; }
+.section.alt { background: var(--light); }
+
+.section h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.section p {
+  color: var(--gray);
+  max-width: 600px;
+  margin-bottom: 16px;
+}
+
+/* VALUES */
+.values {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.value-item {
+  background: var(--black);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 560px) { .grid { grid-template-columns: 1fr; } }
+
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.card-icon { font-size: 1.5rem; margin-bottom: 12px; }
+.card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 8px; }
+.card p { font-size: 0.9rem; color: var(--gray); margin: 0; }
+
+/* LECTURES */
+.lecture-list { display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px; }
+
+.lecture-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.lecture-tag {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.lecture-tag.ready { background: #dcfce7; color: #166534; }
+.lecture-tag.wip { background: #fef9c3; color: #854d0e; }
+.lecture-title { font-size: 0.95rem; }
+.lecture-note { font-size: 0.85rem; color: #888; }
+
+/* POSTS */
+.post-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; }
+
+.post-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--black);
+  transition: border-color 0.15s;
+}
+
+.post-item:hover { border-color: var(--accent); text-decoration: none; }
+.post-title { font-size: 0.95rem; }
+.post-date { font-size: 0.85rem; color: #999; }
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.15s;
+}
+
+.btn:hover { background: #1d4ed8; text-decoration: none; }
+
+.btn-outline {
+  display: inline-block;
+  border: 1.5px solid var(--border);
+  color: var(--black);
+  padding: 11px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.btn-outline:hover { border-color: var(--black); text-decoration: none; }
+
+/* CONTACT */
+.center { text-align: center; }
+.center p { margin: 0 auto 32px; }
+.contact-links { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+/* FOOTER */
+footer {
+  background: var(--light);
+  border-top: 1px solid var(--border);
+  padding: 28px 0;
+}
+
+footer p { font-size: 0.85rem; color: #999; }
+footer a { color: #999; }
+footer a:hover { color: var(--black); }
