@@ -48,17 +48,6 @@ export default function PortfolioPage({ recordMap, imageMap }) {
         <meta property="og:description" content="11년차 PM 박세호(Antony Park)의 대표 프로젝트와 경력 포트폴리오" />
       </Head>
 
-      <header className="nav">
-        <div className="wrap wrap--wide nav-inner">
-          <a href="https://feasible.kr" className="wm">
-            <span>feasible&nbsp;lab</span>
-            <span className="dot" />
-          </a>
-          <a href="https://feasible.kr" className="nav-back">
-            ← 홈으로
-          </a>
-        </div>
-      </header>
 
       <main className="portfolio-main">
         <div className="wrap portfolio-wrap">
