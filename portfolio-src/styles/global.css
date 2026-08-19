@@ -1,0 +1,120 @@
+/* Layout shell — reuses feasiblelab-web's shared style.css tokens/classes
+   (loaded separately via pages/_document.js) so this page feels native
+   to the site instead of like an embedded widget. */
+
+.nav-back {
+  font-family: var(--ef-font-ui);
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--ef-fg-1);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+  transition: color 0.15s;
+}
+.nav-back:hover {
+  color: var(--ef-blue);
+}
+
+.portfolio-main {
+  padding: 64px 0 120px;
+}
+
+.portfolio-wrap {
+  max-width: 760px;
+}
+
+.portfolio-footer {
+  border-top: 1px solid var(--ef-border-2);
+  padding: 32px 0 64px;
+  font-family: var(--ef-font-mono);
+  font-size: 12px;
+  color: var(--ef-fg-3);
+  letter-spacing: 0.04em;
+}
+
+/* ---------- react-notion-x overrides ---------- */
+
+.notion {
+  font-family: var(--ef-font-ui) !important;
+  color: var(--ef-fg-1);
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+.notion-page {
+  padding: 0 !important;
+}
+
+.notion-title {
+  font-family: var(--ef-font-ui) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.04em !important;
+  font-size: clamp(32px, 5vw, 44px) !important;
+  line-height: 1.1 !important;
+  color: var(--ef-fg-1) !important;
+  margin-bottom: 8px !important;
+}
+
+.notion-h1, .notion-h2, .notion-h3 {
+  font-family: var(--ef-font-ui) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.03em !important;
+  color: var(--ef-fg-1) !important;
+}
+
+.notion-text, .notion-list-item, .notion-toggle {
+  font-family: var(--ef-font-ui) !important;
+  font-size: 17px !important;
+  line-height: 1.65 !important;
+  color: var(--ef-fg-1);
+}
+
+.notion-bold {
+  color: var(--ef-fg-1);
+  font-weight: 700;
+}
+
+.notion-link {
+  color: var(--ef-link) !important;
+  text-decoration: none;
+  border-bottom: 1px solid var(--ef-blue-tint);
+}
+.notion-link:hover {
+  border-bottom-color: var(--ef-link);
+}
+
+.notion-quote {
+  border-left: 2px solid var(--ef-border-strong);
+  color: var(--ef-fg-2);
+}
+
+.notion-column {
+  padding: 0 12px !important;
+}
+.notion-column:first-child {
+  padding-left: 0 !important;
+}
+.notion-column:last-child {
+  padding-right: 0 !important;
+}
+
+.notion-asset-wrapper {
+  border-radius: var(--ef-radius-md);
+  overflow: hidden;
+  border: 1px solid var(--ef-border-2);
+}
+
+.notion-collection-page-properties,
+.notion-page-icon-hero {
+  display: none !important;
+}
+
+@media (max-width: 640px) {
+  .portfolio-main {
+    padding: 40px 0 80px;
+  }
+  .notion-title {
+    font-size: 30px !important;
+  }
+}
