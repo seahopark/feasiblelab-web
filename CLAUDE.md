@@ -60,21 +60,23 @@
 - "한 줄 소개와 함께 보내주시면, 이틀 안에 답장드립니다."
 
 ## 디자인 시스템
-**반드시 피저블랩스 디자인 가이드라인을 따른다.**
+**반드시 이 레포의 `DESIGN.md`를 따른다.**
 
-- 레포: `github.com/seahopark/feasiblelab-design-guidelines`
-- 로컬: `/home/tony/Documents/github/feasiblelab-design-guidelines/design-system.md`
+- 위치: `DESIGN.md` (이 레포 루트, feasiblelab-web 전용 — 2026.08 글래스모피즘 리뱀프로 별도 가이드라인 레포에서 이관)
 - Claude 커맨드: `/feasiblelab-design`
+- 다른 피저블랩 산출물(포춘텔러, jammae, research.feasible.kr 등)은 이 문서를 따를 의무 없음 — 제품마다 각자 톤을 가져감
 
 핵심 규칙:
-- 메인 컬러: `#0047FF` (`--ef-blue`)
+- 메인 컬러: `#0047FF` (`--ef-blue`), 다크 배경 위 텍스트/accent는 `#3B6BFF` (`--ef-blue-bright`)
+- 배경: 다크(`#05060D`) + 고정 radial-gradient 블롭 (light-on-white가 아니라 light-on-dark가 기본값)
 - 폰트: Roboto + Noto Sans KR (UI), DM Serif Display (워드마크)
 - CSS 토큰 prefix: `--ef-*`
+- 카드/네비/stat grid는 글래스 패널(`--ef-glass-*` 토큰: 반투명 배경 + blur + border) 기본 적용, CTA 버튼만 예외적으로 solid 유지
 - 섹션 제목: `제목<span class="accent">.</span>` 패턴 (파란 마침표)
 - eyebrow 라벨: `<span class="num">01</span> 섹션명` 패턴
-- 버튼 클래스: `.btn--brand` (파랑), `.btn--solid` (검정), `.btn--ghost` (외곽선)
+- 버튼 클래스: `.btn--brand` (파랑 solid), `.btn--solid` (흰색 solid), `.btn--ghost` (glass 외곽선)
 - 브레이크포인트: 480px / 880px
-- Hero·Contact 섹션: blob SVG 배경 사용
+- Hero·Contact 섹션: blob SVG를 blur(70~90px) 먹인 오로라 글로우로 사용
 
 ## 콘텐츠 원칙
 - 톤: `합니다` 체, 직접적, 과장 없이
