@@ -290,6 +290,22 @@ footer .foot-blurb { margin-top: 20px; font-size: 14px; line-height: 1.6; color:
 .foot-col a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 15px; transition: color .15s; }
 .foot-col a:hover { color: var(--ef-blue-bright); }
 .foot-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.1); font-family: var(--ef-font-mono); font-size: 12px; color: rgba(255,255,255,0.4); letter-spacing: 0.06em; }
+.foot-legal a { color: rgba(255,255,255,0.4); text-decoration: none; margin: 0 6px; transition: color .15s; }
+.foot-legal a:hover { color: var(--ef-blue-bright); }
+
+/* ---------- Policy Pages (Privacy / Terms) ---------- */
+.policy { padding: 120px 0 140px; }
+.policy .back-link { display: inline-flex; align-items: center; gap: 6px; font-family: var(--ef-font-mono); font-size: 13px; color: rgba(255,255,255,0.5); text-decoration: none; margin-bottom: 32px; transition: color .15s; }
+.policy .back-link:hover { color: var(--ef-blue-bright); }
+.policy .policy-meta { font-family: var(--ef-font-mono); font-size: 12px; color: rgba(255,255,255,0.4); letter-spacing: 0.06em; margin-top: 12px; }
+.policy-panel { background: var(--ef-glass-bg); border: 1px solid var(--ef-glass-border); border-radius: var(--ef-radius-md); backdrop-filter: blur(var(--ef-glass-blur)) saturate(160%); -webkit-backdrop-filter: blur(var(--ef-glass-blur)) saturate(160%); box-shadow: var(--ef-glass-shadow); padding: 48px; margin-top: 48px; }
+.policy-panel section { margin-bottom: 36px; }
+.policy-panel section:last-child { margin-bottom: 0; }
+.policy-panel h2 { font-family: var(--ef-font-ui); font-weight: 700; font-size: 20px; letter-spacing: -0.02em; color: #fff; margin: 0 0 12px; }
+.policy-panel p { font-size: 15px; line-height: 1.7; color: var(--ef-fg-2); margin: 0 0 10px; }
+.policy-panel ul { margin: 0 0 10px; padding-left: 20px; color: var(--ef-fg-2); font-size: 15px; line-height: 1.7; }
+.policy-panel li { margin-bottom: 6px; }
+.policy-panel .operator-box { background: rgba(255,255,255,0.04); border: 1px solid var(--ef-glass-border); border-radius: var(--ef-radius-sm); padding: 20px 24px; font-family: var(--ef-font-mono); font-size: 13px; color: rgba(255,255,255,0.75); line-height: 1.8; }
 
 /* ---------- Responsive: Tablet ---------- */
 @media (max-width: 880px) {
@@ -390,4 +406,8 @@ footer .foot-blurb { margin-top: 20px; font-size: 14px; line-height: 1.6; color:
 
   /* Footer */
   .foot-grid { grid-template-columns: 1fr; }
+
+  /* Policy */
+  .policy { padding: 64px 0 80px; }
+  .policy-panel { padding: 24px; margin-top: 32px; }
 }
