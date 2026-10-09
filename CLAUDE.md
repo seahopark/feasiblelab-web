@@ -1,8 +1,7 @@
 # Feasible Lab 랜딩 페이지 — Claude 가이드
 
 ## 서비스 개요
-피저블 랩(Feasible Lab)의 공식 랜딩 페이지. 박세호(Tony)가 운영하는 1인 제품 스튜디오 소개 사이트다.
-강의·컨설팅·AI 프로젝트 수행·글쓰기 네 가지 축으로 일하며, 그 내용을 방문자에게 소개하는 역할을 한다.
+피저블 랩(Feasible Lab)의 공식 사이트. 박세호(Tony)의 포트폴리오로, 협업·강의를 검토하는 방문자에게 무엇을 생각하고 만들고 가르치는지 빠르게 보여준다.
 
 - **로컬 경로**: `/home/tony/Documents/github/feasiblelab-web`
 - **로컬 서빙**: nginx → `http://localhost:8080`
@@ -18,65 +17,50 @@
 
 | 번호 | 섹션 | ID | 역할 |
 |------|------|----|------|
-| Nav | 네비게이션 | — | 섹션 링크 + "문의하기" CTA |
-| Hero | 메인 헤드라인 | — | 핵심 메시지 + CTA 버튼 |
-| 01 | 스튜디오 (About) | `#about` | 박세호 소개, 4가지 원칙 |
-| 02 | 하는 일 (Work) | `#work` | 강의·컨설팅·AI 프로젝트·글쓰기 4축 카드 |
-| 03 | 경력 (Career) | `#career` | 경력사·강의 이력·강의 주제 목록 |
-| 04 | 최근 글 (Writing) | `#writing` | 브런치·퍼블리 글 목록 |
-| 05 | 함께 일하기 (Contact) | `#contact` | 이메일·LinkedIn 연락처 |
-| Footer | 푸터 | — | 링크 모음, 저작권 |
+| Nav | 네비게이션 | — | 워드마크 + 생각·만든 것·강의·경력·글 링크 + "문의하기" |
+| Hero | 첫 화면 | `#top` | 라벨 + 본론 헤드라인 + 보조 한 줄 + CTA 2개 |
+| 01 | 주로 생각하는 것 | `#thinking` | 질문 3개(팀·제품·AI와 PM) + 관련 글 링크 |
+| 02 | 만든 것 | `#built` | jammae, 일단, 포춘텔러, Feasible Skills + 상태 칩 |
+| 03 | 강의 | `#teaching` | 주제 4개 + 강의처 + 강의 문의 |
+| 04 | 경력 | `#career` | 4개 회사(연도만) + 수치 3개 + 포트폴리오 링크 |
+| 05 | 글 | `#writing` | 브런치·퍼블리 8편 |
+| 문의 | 연락 | `#contact` | 이메일·LinkedIn |
+| Footer | 푸터 | — | 개인정보처리방침·이용약관·© |
 
 ### 섹션별 주요 콘텐츠
 
 **Hero**
-- 헤드라인: "팀이 제대로 일할 수 있다면, 제품은 언제든 만들 수 있습니다."
-- 서브: "11년간 Product Lead로 일하며 반복해서 같은 문제를 마주쳤습니다."
-- CTA: "함께 일하기 ↗" (blue), "하는 일 보기" (ghost)
+- 헤드라인: "팀과 제품, 그리고 AI로 일하는 방식을 연구하고, 직접 만들고, 가르칩니다." (이름을 헤드라인으로 쓰지 않음)
+- 보조: "11년차 PM 박세호가 운영합니다."
+- CTA: "강의·협업 문의"(mailto), "만든 것 보기"(#built)
 
-**About (01 스튜디오)**
-- 박세호(Tony) 소개, 코인원·마인이스·블루밍비트 경력
-- AI 애널리스트 서비스 성과: 핵심 기능 전환율 2% → 17.2% (8배)
-- 4가지 원칙: ① 이야기를 먼저 듣습니다 ② 왜?를 먼저 묻습니다 ③ 투명하게 공유합니다 ④ 빠르게 테스트합니다
+**01 질문**: 팀은 왜 같은 방향으로 가지 못하는가 / 제품은 왜 실패하는가 / AI와 함께 PM은 무엇으로 일하는가
 
-**Work (02 하는 일)**
-- 강의 & 워크샵: PM 소통법, Discovery & Framing, User Story Mapping, AI 업무 활용
-- 컨설팅: 프로덕트 방향·팀 운영·AI 도입 전략
-- AI 프로젝트 수행: AI 에이전트 설계, 업무 자동화, 서비스 기획
-- 글쓰기: 브런치(`brunch.co.kr/@tsp`), 퍼블리
+**02 만든 것**: jammae(운영 중), 일단 Ildan(출시 준비 중, 링크 없음), 포춘텔러(운영 중), Feasible Skills(운영 중). research.feasible.kr은 목록에서 뺐다.
 
-**Career (03 경력)**
-- 경력: 블루밍비트(AI 미디어), 코인원(핀테크), 마인이스(커머스) — 모두 Product Lead
-- 강의처: GS그룹, 그로우앤베터, IBK창공, 마크엔컴퍼니, SBA DT School
-- 강의 주제 4가지 (2시간 단위)
+**03 강의**: PM 소통법, Discovery & Framing, AI 시대 PM의 역할, AI 에이전트 설계. 강의처 GS그룹·그로우앤베터·IBK창공·마크엔컴퍼니·SBA DT School.
 
-**Writing (04 최근 글)**
-- 브런치 및 퍼블리 글 5편 링크
-- 외부 링크 → `target="_blank" rel="noopener"` 필수
+**04 경력**: 블루밍비트 2025~2026 / 마인이스(차란) 2024~2025 / 코인원 2022~2023 / 식스샵 2020~2022. 수치 11년·6개 팀·6.6배.
 
-**Contact (05 함께 일하기)**
-- 이메일: `seho@feasible.kr`
-- LinkedIn: `linkedin.com/in/tonyseahopark`
-- "한 줄 소개와 함께 보내주시면, 이틀 안에 답장드립니다."
+**05 글**: 브런치 5편, 퍼블리 3편. 외부 링크는 `target="_blank" rel="noopener"` 필수.
+
+**문의**: seho@feasible.kr, linkedin.com/in/tonyseahopark, "이틀 안에 답장드립니다."
 
 ## 디자인 시스템
-**반드시 이 레포의 `DESIGN.md`를 따른다.**
+**반드시 이 레포의 `DESIGN.md`를 따른다.** 방향 계약은 `design/direction.md`, 근거는 `PRODUCT.md`.
 
-- 위치: `DESIGN.md` (이 레포 루트, feasiblelab-web 전용 — 2026.08 글래스모피즘 리뱀프로 별도 가이드라인 레포에서 이관)
 - Claude 커맨드: `/feasiblelab-design`
-- 다른 피저블랩 산출물(포춘텔러, jammae, research.feasible.kr 등)은 이 문서를 따를 의무 없음 — 제품마다 각자 톤을 가져감
+- 다른 피저블랩 산출물은 이 문서를 따를 의무 없음
 
 핵심 규칙:
-- 메인 컬러: `#0047FF` (`--ef-blue`), 다크 배경 위 텍스트/accent는 `#3B6BFF` (`--ef-blue-bright`)
-- 배경: 다크(`#05060D`) + 고정 radial-gradient 블롭 (light-on-white가 아니라 light-on-dark가 기본값)
-- 폰트: Roboto + Noto Sans KR (UI), DM Serif Display (워드마크)
-- CSS 토큰 prefix: `--ef-*`
-- 카드/네비/stat grid는 글래스 패널(`--ef-glass-*` 토큰: 반투명 배경 + blur + border) 기본 적용, CTA 버튼만 예외적으로 solid 유지
-- 섹션 제목: `제목<span class="accent">.</span>` 패턴 (파란 마침표)
-- eyebrow 라벨: `<span class="num">01</span> 섹션명` 패턴
-- 버튼 클래스: `.btn--brand` (파랑 solid), `.btn--solid` (흰색 solid), `.btn--ghost` (glass 외곽선)
-- 브레이크포인트: 480px / 880px
-- Hero·Contact 섹션: blob SVG를 blur(70~90px) 먹인 오로라 글로우로 사용
+- 밝은 회색 바탕(`#F2F3F5`) + 테두리 있는 흰 패널. 다크·블롭·글래스 사용 금지(2026-10-09 폐기)
+- 브랜드 파랑 `#0047FF`(`--ef-blue`)는 CTA·라벨·문의 패널에만
+- 폰트: Pretendard Variable(UI), DM Serif Display(워드마크 전용), 라벨·칩은 모노스페이스
+- CSS 토큰 prefix: `--ef-*`, 모든 스타일은 `style.css` 한 파일(인라인 style 금지)
+- 구조: 패널 헤더(`01` 모노 번호 + h2) + 행 목록, 운영 상태는 칩(`.st.live`, `.st.soon`)
+- 브레이크포인트: 760px(내비 한 줄) / 900px(다열 그리드). 모바일 우선
+- 워드마크 마크업·CSS는 바꾸지 않는다
+- privacy·terms도 같은 `style.css`와 내비·푸터를 쓴다
 
 ## 콘텐츠 원칙
 - 톤: `합니다` 체, 직접적, 과장 없이
