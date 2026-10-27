@@ -45,6 +45,8 @@ h1, h2, h3, p { margin: 0; }
 :focus-visible { outline: 3px solid var(--ef-blue); outline-offset: 2px; }
 .contact :focus-visible, .btn.b1:focus-visible, .cta-nav:focus-visible { outline-color: var(--ef-ink); box-shadow: 0 0 0 2px #fff; }
 .contact :focus-visible { outline-color: #fff; box-shadow: none; }
+.skip-link { position: fixed; z-index: 100; top: 8px; left: 8px; transform: translateY(-160%); background: var(--ef-ink); color: #fff; padding: 8px 12px; text-decoration: none; }
+.skip-link:focus { transform: translateY(0); }
 
 .wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
 
@@ -74,6 +76,7 @@ header.nav ul a:hover { color: var(--ef-blue); }
 .hero .lab { display: block; margin-bottom: 10px; }
 .hero h1 { font-size: clamp(26px, 5.2vw, 40px); letter-spacing: -0.03em; line-height: 1.25; }
 .hero .sub { margin-top: 10px; font-size: 15px; color: var(--ef-fg-3); }
+.hero .proof { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--ef-line); font: 700 12px/1.6 var(--ef-font-mono); color: var(--ef-fg-2); }
 .hero .ctas { margin-top: 20px; }
 
 /* ---------- Section panel ---------- */
@@ -144,6 +147,7 @@ header.nav ul a:hover { color: var(--ef-blue); }
 .contact .wrap { background: var(--ef-blue); border-color: var(--ef-blue); color: #fff; padding: 22px 18px; }
 .contact .lab { color: var(--ef-blue-pale); }
 .contact h2 { font-size: 22px; line-height: 1.35; margin: 6px 0 16px; }
+.contact-guide { max-width: 620px; margin: -6px 0 16px; color: var(--ef-blue-note); }
 .contact .b1 { background: #fff; color: var(--ef-blue); }
 .contact .b2 { background: transparent; color: #fff; box-shadow: inset 0 0 0 1.5px #fff; }
 .note { margin-top: 12px; font-size: 14px; color: var(--ef-blue-note); }
